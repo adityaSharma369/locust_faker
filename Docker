@@ -1,0 +1,38 @@
+Docker
+--->sudo docker run (name of the file)//to create and start a file
+
+
+--->sudo docker ls // to show list
+
+
+--->sudo docker ps //current running files
+
+
+--->sudo docker exec -it (name of the file) sh //shell
+
+-------------------------------------------------------------------
+
+
+--->sudo docker build .
+
+
+--->sudo docker build -t adi/simpleweb .  //for tag 
+
+
+--->sudo docker run adi/simpleweb //to run the docker with the tag
+
+
+--->sudo docker run -p 8080:8080 adi/simpleweb //to connect 
+											localhost and docker
+
+
+--->sudo docker run -it adi/simpleweb sh //(another teriminal)to 										open shell(docker terminal)
+
+
+--->docker ps //current running files
+
+
+--->sudo docker run -it (id of container) sh
+------------------------------------------------------------------
+
+--->docker run -p 3000:3000 -v /app/node_modules -v $(pwd):/app de605cbbe86d   
